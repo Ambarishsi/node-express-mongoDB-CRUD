@@ -1,0 +1,26 @@
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>full name</th>
+        <th>email</th>
+        <th>mobile</th>
+        <th>city</th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    {{list}}
+    {{#each list}}
+    <tr>
+        <td>{{list.fullName}}</td>
+        <td>{{list.email}}</td>
+        <td>{{list.mobile}}</td>
+        <td>{{list.city}}</td>
+        <td>
+            <a><i class="fa fa-pencil fa-lg"></i></a>
+             <a><i class="fa fa-pencil fa-lg"></i></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
